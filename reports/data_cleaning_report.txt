@@ -1,0 +1,38 @@
+======================================================================
+DATA CLEANING REPORT
+======================================================================
+Original shape : 8763 rows x 19 cols
+Final shape    : 8720 rows x 19 cols
+
+-- Missing Values (before cleaning) --
+  customer_name: 131 missing
+  discount: 87 missing
+
+-- Missing Value Handling Decisions --
+  customer_name: Filled 131 missing values with 'Guest Customer' (customer_id remains valid; treated as an incomplete guest checkout)
+  discount: Filled 87 missing values with 0.0 (ASSUMPTION: missing discount means no discount was applied -- this should be validated against source system behavior in a real deployment)
+
+-- Duplicates Removed: 43 rows --
+
+-- Data Type Conversions --
+  order_date: object -> datetime64
+  ship_date: object -> datetime64
+  ship_mode: object -> category
+  segment: object -> category
+  country: object -> category
+  city: object -> category
+  state: object -> category
+  region: object -> category
+  category: object -> category
+  sub_category: object -> category
+  order_id: object -> string
+  customer_id: object -> string
+  product_id: object -> string
+
+-- Business Rule Validation --
+  No violations found.
+
+-- Outlier Detection (reported, NOT removed) --
+  sales: 771 rows (8.84%) outside [-95923.18, 174380.07] using IQR method -- kept in dataset, flagged for business review
+  profit: 1796 rows (20.6%) outside [-4430.27, 7312.02] using IQR method -- kept in dataset, flagged for business review
+======================================================================
