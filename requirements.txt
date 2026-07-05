@@ -1,4 +1,4 @@
-﻿# --- Core Data Processing ---
+# --- Core Data Processing ---
 pandas==2.2.2
 numpy==1.26.4
 
@@ -6,35 +6,26 @@ numpy==1.26.4
 matplotlib==3.9.0
 plotly==5.22.0
 seaborn==0.13.2
-
 # --- Database ---
 SQLAlchemy==2.0.30
 mysql-connector-python==8.4.0
 PyMySQL==1.1.1
-
 # --- Machine Learning ---
 scikit-learn==1.5.0
 prophet==1.1.5
-
 # --- AI Assistant ---
 openai==1.35.3
 python-dotenv==1.0.1
-
 # --- Web Application ---
 Flask==3.0.3
 Flask-SQLAlchemy==3.1.1
 Flask-WTF==1.2.1
-
 # --- Utilities ---
 python-dateutil==2.9.0.post0
 requests==2.32.3
-
 # --- Development / Code Quality ---
 black==24.4.2
 flake8==7.0.0
 pytest==8.2.2
-
-# --- Data Generation ---
-Faker==25.8.0
 # --- Data Generation ---
 Faker==25.8.0
