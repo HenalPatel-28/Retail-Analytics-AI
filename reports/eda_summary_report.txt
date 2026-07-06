@@ -1,0 +1,55 @@
+======================================================================
+EXPLORATORY DATA ANALYSIS -- SUMMARY REPORT
+======================================================================
+Dataset: 8720 rows, 37 columns
+Date range: 2022-01-01 to 2025-12-31
+
+-- Descriptive Statistics --
+
+           sales     profit  quantity  discount  unit_price  profit_margin_pct  days_to_ship
+count    8720.00    8720.00   8720.00   8720.00     8720.00            8720.00       8720.00
+mean    56424.15    1867.00      4.49      0.14    12641.71               7.15          4.01
+std     85119.94    8784.86      2.28      0.14    15934.54              11.71          2.00
+min        41.00  -82691.17      1.00      0.00       30.61             -26.99          1.00
+25%      5440.54     -26.92      3.00      0.00     1527.03              -0.35          2.00
+50%     17396.05     694.48      5.00      0.10     4650.04               7.10          4.00
+75%     73016.35    2908.66      6.00      0.20    18689.23              14.46          6.00
+max    757016.08  104373.14      8.00      0.50    95874.56              34.95          7.00
+
+
+-- Skewness & Kurtosis --
+  sales: skew=2.60 (right-skewed), kurtosis=8.41
+  profit: skew=1.22 (right-skewed), kurtosis=18.06
+  quantity: skew=-0.01 (roughly symmetric), kurtosis=-1.23
+  discount: skew=0.81 (right-skewed), kurtosis=-0.20
+  unit_price: skew=1.74 (right-skewed), kurtosis=2.99
+  profit_margin_pct: skew=-0.03 (roughly symmetric), kurtosis=-0.18
+  days_to_ship: skew=-0.01 (roughly symmetric), kurtosis=-1.26
+
+-- Correlation Highlights --
+  Strongest correlation with sales: unit_price (0.84)
+  Weakest correlation with sales: profit_margin_pct (-0.22)
+
+-- Category Performance --
+                  total_sales  avg_margin_pct  order_count
+category                                                  
+Technology       3.321743e+08            0.65         2159
+Furniture        1.342325e+08            2.95         2063
+Office Supplies  2.561172e+07           14.23         2933
+
+-- Regional Sales --
+region
+West     1.732728e+08
+South    1.566039e+08
+North    9.816830e+07
+East     6.397358e+07
+
+-- Monthly Sales Trend (highlights) --
+  Peak month: 2025-10 (Rs 19,112,700)
+  Lowest month: 2022-02 (Rs 6,816,590)
+
+-- Key Findings (plain language) --
+  1. Sales and profit are right-skewed: most orders are modest in value, with a smaller number of large orders pulling the average upward. Median is more representative of a 'typical' order than the mean.
+  2. Heavy discounting visibly erodes profit margin, and a meaningful share of highly-discounted orders fall below the profitability line (see discount_vs_margin_scatter.png).
+  3. Sales show clear seasonality, peaking in the Oct/Nov festive window -- this is a strong signal for Module 9's forecasting model to capture.
+======================================================================
