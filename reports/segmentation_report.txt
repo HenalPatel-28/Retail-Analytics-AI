@@ -1,0 +1,25 @@
+======================================================================
+CUSTOMER SEGMENTATION -- RFM + K-MEANS REPORT
+======================================================================
+Total customers segmented: 799
+Number of segments (k): 2 (selected by highest silhouette score: 0.311)
+
+-- Segment Profiles (average RFM per segment) --
+  segment  recency_days  frequency  monetary
+Champions         124.5        7.8  834557.8
+     Lost         306.1        4.5  362144.1
+
+-- Segment Sizes --
+segment
+Champions    429
+Lost         370
+
+-- Business Recommendations --
+  Champions: highest value, most frequent, most recent -- reward with loyalty perks, early access to new products.
+  Loyal Customers: strong repeat behavior -- upsell/cross-sell opportunities.
+  At Risk / Needs Attention: declining recency despite past value -- targeted win-back campaigns before they churn.
+  Hibernating / Lost: long recency, low frequency -- low-cost re-engagement (email) rather than heavy investment.
+
+-- Important Caveat --
+  This dataset's ~99% repeat-customer rate (noted in Module 7) is a known artifact of the synthetic data generation method (customers were resampled per order rather than modeling realistic customer acquisition/churn). In a real dataset with a genuine mix of one-time and repeat buyers, segment sizes and separation would look meaningfully different -- treat these specific proportions as illustrative of the METHOD, not as a real business finding.
+======================================================================
