@@ -1,0 +1,16 @@
+======================================================================
+SALES FORECASTING -- MODEL COMPARISON REPORT
+======================================================================
+Granularity: Weekly total sales
+Train period: 2022-01-02 to 2025-05-25 (178 weeks)
+Test period: 2025-06-01 to 2026-01-04 (32 weeks)
+
+-- Model Performance (on held-out test weeks) --
+  Linear Regression: MAE=Rs 594,904.99 | RMSE=Rs 788,718.51 | R2=0.3835
+  Random Forest: MAE=Rs 756,600.03 | RMSE=Rs 984,191.91 | R2=0.04
+
+-- Winner: Linear Regression (lowest RMSE) --
+
+-- Interpretation --
+  MAE tells us the typical dollar-value error; RMSE penalizes any large individual misses more heavily. We select on RMSE because, for business planning, one badly wrong week (e.g., under-forecasting a festive spike) is more costly than several slightly-off ordinary weeks.
+======================================================================
