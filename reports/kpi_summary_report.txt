@@ -1,0 +1,50 @@
+======================================================================
+BUSINESS ANALYTICS -- KPI SUMMARY REPORT
+======================================================================
+
+-- Headline KPIs --
+  Total Sales                : Rs 492,018,594.56
+  Total Profit               : Rs 16,280,218.62
+  Overall Profit Margin      : 3.31%
+  Total Orders                : 5,000
+  Total Customers             : 799
+  Average Order Value (AOV)   : Rs 98,403.72
+  Customer Lifetime Value (CLV): Rs 615,792.98  [NOTE: simple historical average = total sales / total customers over the observed period. Not a predictive/future CLV model.]
+  Repeat Customers            : 791 (99.00%)
+
+-- Monthly Trend (last 6 months) --
+            total_sales  total_profit  order_count  mom_growth_pct
+order_date                                                        
+2025-07-31   9309250.68     356913.20           95           -5.94
+2025-08-31   7932977.46     230760.51           98          -14.78
+2025-09-30  11597829.89     408300.66          125           46.20
+2025-10-31  19112700.36     548623.35          125           64.80
+2025-11-30  14460995.97     121094.10          122          -24.34
+2025-12-31  12559160.15     589261.27          120          -13.15
+
+-- Regional Performance --
+         total_sales  total_profit  order_count  sales_share_pct
+region                                                          
+West    1.732728e+08    5486772.82         1738            35.22
+South   1.566039e+08    5511383.96         1696            31.83
+North   9.816830e+07    3210463.32          878            19.95
+East    6.397358e+07    2071598.52          688            13.00
+
+-- Top 10 Products by Sales --
+product_id        product_name   category  total_sales  total_profit  units_sold
+PROD-00061       Premium Phone Technology  16812720.81     317511.12         588
+PROD-00072     Premium Machine Technology  15657530.22     320223.77         546
+PROD-00078 Standard Accessorie Technology  15222094.69     372439.63         493
+PROD-00077  Premium Accessorie Technology  15129230.01     241805.46         502
+PROD-00071     Premium Machine Technology  14923941.58      44653.89         510
+PROD-00083     Standard Copier Technology  14510098.48     127620.23         496
+PROD-00079      Classic Copier Technology  14469463.37     340818.51         472
+PROD-00070     Compact Machine Technology  14445907.33     257649.41         473
+PROD-00066           Eco Phone Technology  14441835.78     299840.78         469
+PROD-00080      Premium Copier Technology  14360315.98     390806.31         485
+
+-- Business Interpretation --
+  Peak sales month was October 2025, consistent with the festive season pattern identified in Module 6's EDA.
+  West contributes the largest regional share at 35.2% of total sales.
+  A repeat customer rate of 99.0% indicates strong customer retention -- a key input for any customer segmentation work in Module 10.
+======================================================================

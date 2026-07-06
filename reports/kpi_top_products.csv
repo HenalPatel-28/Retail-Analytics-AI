@@ -1,0 +1,11 @@
+product_id,product_name,category,total_sales,total_profit,units_sold
+PROD-00061,Premium Phone,Technology,16812720.81,317511.12,588
+PROD-00072,Premium Machine,Technology,15657530.22,320223.77,546
+PROD-00078,Standard Accessorie,Technology,15222094.69,372439.63,493
+PROD-00077,Premium Accessorie,Technology,15129230.01,241805.46,502
+PROD-00071,Premium Machine,Technology,14923941.58,44653.89,510
+PROD-00083,Standard Copier,Technology,14510098.48,127620.23,496
+PROD-00079,Classic Copier,Technology,14469463.37,340818.51,472
+PROD-00070,Compact Machine,Technology,14445907.33,257649.41,473
+PROD-00066,Eco Phone,Technology,14441835.78,299840.78,469
+PROD-00080,Premium Copier,Technology,14360315.98,390806.31,485
