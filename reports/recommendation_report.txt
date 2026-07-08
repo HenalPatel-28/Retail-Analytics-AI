@@ -1,0 +1,25 @@
+======================================================================
+PRODUCT RECOMMENDATION -- MARKET BASKET ANALYSIS REPORT
+======================================================================
+Total orders analyzed: 5000
+Total unique products: 84
+Qualifying association rules found: 65 (min_support=0.001, min_lift=1.2)
+
+-- Top 10 Rules by Lift --
+  Compact Bookcase + Eco Accessorie: lift=3.33, support=0.0012, confidence(A->B)=0.0606, confidence(B->A)=0.0659
+  Deluxe Art + Deluxe Art: lift=3.3, support=0.0012, confidence(A->B)=0.0667, confidence(B->A)=0.0594
+  Pro Binder + Compact Binder: lift=3.1, support=0.0012, confidence(A->B)=0.0732, confidence(B->A)=0.0508
+  Compact Bookcase + Deluxe Furnishing: lift=3.053, support=0.001, confidence(A->B)=0.0562, confidence(B->A)=0.0543
+  Premium Phone + Compact Accessorie: lift=2.774, support=0.0012, confidence(A->B)=0.0577, confidence(B->A)=0.0577
+  Deluxe Bookcase + Premium Fastener: lift=2.722, support=0.001, confidence(A->B)=0.0446, confidence(B->A)=0.061
+  Premium Furnishing + Classic Fastener: lift=2.72, support=0.001, confidence(A->B)=0.0495, confidence(B->A)=0.0549
+  Pro Furnishing + Deluxe Fastener: lift=2.717, support=0.001, confidence(A->B)=0.0581, confidence(B->A)=0.0467
+  Compact Chair + Premium Furnishing: lift=2.692, support=0.001, confidence(A->B)=0.0463, confidence(B->A)=0.0581
+  Premium Table + Standard Paper: lift=2.661, support=0.001, confidence(A->B)=0.0575, confidence(B->A)=0.0463
+
+-- Interpretation --
+  Lift > 1 means these products are bought together MORE often than random chance would predict -- these are potential cross-sell opportunities, not just two popular items that happen to co-occur because both are popular individually.
+
+-- IMPORTANT STATISTICAL CAVEAT: Multiple Comparisons --
+  65 of 65 rules are based on FEWER THAN 10 co-occurrences. With many products, we are testing thousands of possible pairs simultaneously (e.g. 84 products = 3486 possible pairs) -- purely by random chance, some pairs will show elevated lift even with ZERO real association, simply because we tested so many. This is the 'multiple comparisons' problem. TREAT LOW-CO-OCCURRENCE, HIGH-LIFT RULES WITH CAUTION -- prioritize rules with higher co_occurrence_count as more trustworthy, and consider this analysis exploratory rather than confirmed business fact until validated against new data or a larger sample.
+======================================================================
